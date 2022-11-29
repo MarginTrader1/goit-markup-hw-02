@@ -4,11 +4,12 @@
     --main-text-color: #434455;
     --main-title-color:  #2E2F42;
     --link-color: #4D5AE5;
+    --main-background-color: #FFFFFF;
     }
  
 /* body styles */
 body {
-    background-color: #FFFFFF;
+    background-color: var(--main-background-color);
         
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);
@@ -75,14 +76,15 @@ li {
 }
 
 .hero {
-    color: #FFFFFF;
+    color: var(--main-background-color);
     font-size: 56px;
     line-height: 1.07;
     
 }
 
 .button {
-    color: #FFFFFF;
+    font-family: inherit;
+    color: var(--main-background-color);
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.04em;
@@ -147,7 +149,7 @@ li {
     letter-spacing: 0.02em;
 }
 .team-card {
-    background-color: #FFFFFF;
+    background-color: var(--main-background-color);
     width: 265px;
     text-align: center;
 }
@@ -170,4 +172,36 @@ li {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/* porfolio styles */
+
+.porfolio-button {
+    background-color: #E7E9FC;
+    border: 1px solid #E7E9FC;
     
+    font-family: inherit;
+    color: var(--link-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    
+    cursor: pointer;
+}
+
+.porfolio-button:hover,
+.porfolio-button:focus {
+    background-color: var(--link-color);
+    color: var(--main-background-color);
+} 
+
+.work-card-title {
+    color: var(--main-title-color);
+    
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    
+}
+
