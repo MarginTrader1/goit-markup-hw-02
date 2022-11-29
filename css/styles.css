@@ -175,6 +175,10 @@ li {
 
 /* porfolio styles */
 
+.portfolio {
+    display: none;
+}
+
 .porfolio-button {
     background-color: #E7E9FC;
     border: 1px solid #E7E9FC;
