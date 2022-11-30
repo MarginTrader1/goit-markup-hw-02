@@ -1,5 +1,13 @@
+/* Стандартна блокова модель "border-box" */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* root styles */
+
 :root {
     --main-text-color: #434455;
     --main-title-color:  #2E2F42;
@@ -109,7 +117,7 @@ li {
 
 .features-title {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.04em;
 }
